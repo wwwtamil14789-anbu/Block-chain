@@ -1,770 +1,705 @@
-    * 
-    {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        background-color: black;
-    }
-    .class 
-    {
-        display: flex;
-        /* background-color: aqua; */
-    }
-    .nav 
-    {
-        display: flex;
-        font-size: 38px;
-        margin-left:0px; 
-    }
-    nav a 
-    {
-        margin: 70.9px;
-        text-decoration: none;
-        color: white;
-        font-size: 18px;
-    }
-    .button
-    {
-        width: 130px;
-        height: 40px;
-        background-color: orange;
-        border-radius: 25px;
-        font-size: 20px;
-        margin-left: 20px
-    }
-    
-   
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    /* main page */
-    .main-head 
+html
+{
+    overflow-x: hidden;
+}
+
+body
+{
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+.class
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 24px 60px;
+    background-color: black;
+}
+
+.nav
+{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 34px;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.button
+{
+    width: 130px;
+    height: 40px;
+    background-color: orange;
+    border: 0;
+    border-radius: 25px;
+    color: black;
+    font-size: 18px;
+}
+
+p
+{
+    color: gray;
+}
+
+.btn
+{
+    border-radius: 25px;
+}
+
+/* main page */
+.main-page
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 90px 8%;
+}
+
+.main-head
+{
+    list-style: none;
+    flex: 1 1 460px;
+}
+
+.main-head h1
+{
+    font-size: clamp(38px, 6vw, 70px);
+    line-height: 1.1;
+    color: white;
+}
+
+.main-head h5
+{
+    margin-top: 18px;
+    font-size: clamp(16px, 2vw, 20px);
+    color: white;
+}
+
+.main-head .btn
+{
+    margin-top: 24px;
+}
+
+.img
+{
+    flex: 1 1 430px;
+    text-align: center;
+}
+
+.dotted,
+.dotted-2
+{
+    color: azure;
+    text-align: center;
+}
+
+.dotted
+{
+    margin-top: 24px;
+}
+
+.dotted i,
+.dotted-2 i
+{
+    margin: 0 4px;
+}
+
+.dotted i:hover,
+.dotted-2 i:hover
+{
+    font-size: 16px;
+    color: lightsalmon;
+}
+
+/* lottery page */
+.lottery
+{
+    color: whitesmoke;
+    padding: 70px 8%;
+}
+
+.lottery-head h1
+{
+    font-size: clamp(32px, 4vw, 48px);
+}
+
+.lottery-head p
+{
+    max-width: 900px;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 34px;
+    max-width: 1200px;
+    margin: 32px auto 0;
+    padding: 0;
+}
+
+.container-head
+{
+    flex: 1 1 280px;
+    max-width: 330px;
+}
+
+.card
+{
+    width: 100% !important;
+    background-color: #111;
+    overflow: hidden;
+}
+
+.card-body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 92px;
+    background-color: #111;
+}
+
+.card-body a
+{
+    margin-left: 0;
+    border-radius: 25px;
+}
+
+.dotted-2
+{
+    margin-top: 40px;
+}
+
+/* stacking page */
+.stacking,
+.doa,
+.launchpad,
+.learn,
+.seed
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    color: white;
+    padding: 90px 8%;
+}
+
+.stack-img,
+.doa-img,
+.launchpad-img,
+.learn-img,
+.seed-img
+{
+    flex: 1 1 420px;
+    text-align: center;
+}
+
+.stack-content,
+.doa-head,
+.launchpad-content,
+.learn-content,
+.seed-content
+{
+    flex: 1 1 420px;
+}
+
+.stack-content h1,
+.doa-head h1,
+.launchpad-content h1,
+.learn-content h1,
+.seed-content h1
+{
+    font-size: clamp(32px, 4vw, 48px);
+    margin-bottom: 16px;
+}
+
+.stack-content p,
+.doa-head p,
+.launchpad-content p,
+.learn-content p,
+.seed-content p
+{
+    margin-bottom: 20px;
+}
+
+#sam,
+#q1,
+#f1,
+#t1
+{
+    margin-left: 0;
+}
+
+/* company page */
+.companys
+{
+    padding: 70px 6%;
+}
+
+.brand,
+.brand-1
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.brand img,
+.brand-1 img
+{
+    padding-left: 0;
+    max-width: 150px;
+}
+
+/* three icons */
+.icons
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: stretch;
+    justify-content: center;
+    padding: 100px 8% 40px;
+    text-align: center;
+}
+
+.icon-card
+{
+    border: 2px solid lightgray;
+    color: white;
+    border-radius: 30px;
+    width: min(100%, 400px);
+    min-height: 310px;
+    text-align: center;
+    padding: 30px;
+}
+
+.icon-card p
+{
+    color: gray;
+}
+
+.icon-card h6
+{
+    padding-top: 28px;
+}
+
+/* our web page */
+.icon-web
+{
+    position: relative;
+    min-height: 560px;
+    padding: 120px 8%;
+    text-align: center;
+    color: white;
+}
+
+.icon-right,
+.icon-left,
+.icon-right-bottom,
+.icon-left-bottom
+{
+    position: absolute;
+}
+
+.icon-right
+{
+    left: 12%;
+    top: 80px;
+}
+
+.icon-left
+{
+    right: 12%;
+    top: 120px;
+}
+
+.icon-right-bottom
+{
+    left: 14%;
+    bottom: 70px;
+}
+
+.icon-left-bottom
+{
+    right: 14%;
+    bottom: 80px;
+}
+
+.icon-center
+{
+    text-align: center;
+}
+
+.icon-center img
+{
+    width: min(360px, 70vw);
+}
+
+.icon-content p,
+.icon-content p1
+{
+    display: block;
+    padding-left: 0;
+    padding-top: 0;
+    font-size: clamp(20px, 3vw, 30px);
+    color: whitesmoke;
+}
+
+.icon-content
+{
+    margin-top: 38px;
+}
+
+#p1
+{
+    margin: 28px 0 0;
+}
+
+/* footer */
+.footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 90px 8% 40px;
+    justify-content: space-between;
+}
+
+.ALIHASSAN,
+.docs,
+.news
+{
+    padding: 0;
+    color: white;
+}
+
+.ALIHASSAN
+{
+    flex: 1 1 260px;
+}
+
+.docs
+{
+    flex: 1 1 180px;
+}
+
+.news
+{
+    flex: 2 1 320px;
+}
+
+.news input
+{
+    width: min(100%, 420px);
+    padding: 10px 24px !important;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 25px;
+    background-color: black;
+}
+
+.copy-rights
+{
+    color: white;
+    padding: 0 8% 35px;
+}
+
+@media (max-width: 1199px)
+{
+    .class
     {
-        margin-bottom: 100px;
-        font-size: 40px;
-        list-style: none;
+        padding: 22px 40px;
+        align-items: flex-start;
     }
-    .main-head h1 
+
+    nav
     {
-        font-size: 50px;
-        padding-left: 130px;
-        padding-top: 180px;
-        color: white;
+        gap: 22px;
     }
-    .main-head h5 
-    {
-        font-size: 18px;
-        color: white;
-        padding-left: 130px;
-    }
-    .btn 
-    {
-        margin-left: 130px;
-        border-radius: 25px;
-    }
-    .img img
-    {
-        margin-left: 50%;
-        margin-top: -490px;
-    }
-    .dotted 
-    {
-        align-items: center;
-        color: azure;
-        margin-left: 47%;
-    }
-    .dotted i 
-    {
-        margin-top: -70px;
-    }
-    .dotted i:hover 
+
+    nav a
     {
         font-size: 16px;
-        color: lightsalmon;
-    }
-    
-    
-
-    /* lottery page */
-    .lottery 
-    {
-        display: flex;
-        color: whitesmoke;
-        padding-left: 60px;
-    }
-    .lottery-head h1 
-    {
-        padding-top: 50px;
-        padding-left: 70px;
-        font-size: 40px;
-    }
-    .lottery-head p 
-    {
-        padding-left: 70px;
-        margin-top: 15px;
-        font-size: 15px;
-        color: gray;
-    }
-    .container 
-    {
-        display: flex;
-        gap: 160px;
-        padding-top: 15px;
-        margin-left: 60px;
-    }
-    .card-body 
-    {
-        display: flex;
-        align-items: center;
-        min-height: 100px;
-    }
-    .card-body a 
-    {
-        padding: 5px;
-        padding-right: 10px;
-        margin-left: 20px;
-        border-radius: 25px;
-    }
-    .dotted-2 
-    {
-        text-align: center;
-        margin-left: 100px;
-    }
-    .dotted-2 i 
-    {
-        margin-top: 80px;
-    }
-    .dotted-2 i:hover 
-    {
-        font-size: 16px;
-        color: lightsalmon;
     }
 
-    /* stacking page */
-    .stacking
-    {
-        display: flex;
-        color: whitesmoke;
-    }
-    .stack-img
-    {
-        padding-top: 100px;
-        padding-left: 80px;
-    }
-    .stack-content h1
-    {
-        padding-top: 180px;
-        padding-left: 200px;
-    }
-    .stack-content p
-    {
-        padding-left: 200px;
-        color: gray;
-    }
-    .stack-content button
-    {
-        margin-left: 200px;
-        border-radius: 25px;
-    }
-    
-
-    /* company page */
-    .companys
-    {
-        padding-top:80px;
-    }
-    .brand img
-    {
-        padding-left: 37px;
-    }
-    .brand-1 img
-    {
-        padding-left: 37px;
-    }
-
-    /* Doa page */
-    .doa
-    {
-        
-        display: flex;
-        color: white;
-        padding-top: 100px;
-        padding-left: 130px;
-    }
-    .doa-head
-    {
-        margin-top: 190px;
-    }
-    .doa-head p
-    {
-        color: gray;
-    }
-    #sam
-    {
-        margin-left: -2px;
-    }
-    .doa-img
-    {
-        margin-left: 400px;
-    }
-
-    
-@media (min-width:601px) and (max-width:990px)
-    {
-        .class
-        {
-            flex-direction: column;
-        }
-        .main-head
-        {
-            flex-direction: column;
-        }
-        .lottery
-        {
-            flex-direction: column;
-        }
-        .stacking
-        {
-            flex-direction: column;
-        }
-        .companys
-        {
-            flex-direction: column;
-        }
-        .doa
-        {
-            flex-direction: column;
-        }
-        .launchpad
-        {
-            flex-direction: column;
-        }
-        .learn
-        {
-            flex-direction: column;
-        }
-        .seed
-        {
-            flex-direction: column;
-        }
-        .icons
-        {
-            flex-direction: column;
-        }
-        .icon-web
-        {
-            flex-direction: column;
-        }
-    }
-
-    
-    @media (min-width:400px) and (max-width:600px)
-    {
-        .class
-        {
-            flex-wrap: wrap;
-        }
-        .nav
-        {
-            flex-wrap: wrap;
-        }
-        .main-head
-        {
-            flex-wrap: wrap;
-        }
-        .main-head h1,h5
-        {
-            font-size: 40px;
-            margin-left: -90px;
-        }
-        .btn
-        {
-            margin-left: 45px;
-        }
-        .img img
-        {
-            width: 400px;
-            margin-left: 10px;
-            margin-top: -100px;
-        }
-        .dotted
-        {
-            margin-left: 140px;
-        }
-
-
-        .lottery-head h1
-        {
-            margin-left: -95px;
-        }
-        .lottery-head p
-        {
-            flex-wrap: wrap;
-            font-size: 15px;
-            margin-left: -95px;
-            
-        }
-        .container-head .card 
-        {
-            margin-left: 80px;
-        }
-        .container
-        {
-            flex-wrap: wrap;
-            margin-left: -100px;
-            width: 10px;
-        } 
-        .lottery-head .dotted-2
-        {
-            margin-left: -90px;
-        }
-
-
-        .stacking
-        {
-            flex-wrap: wrap;
-        }
-        .stack-img img
-        {
-            width: 300px;
-            margin-left: -45px;
-        }
-        .stack-content
-        {
-            margin-left: -160px;
-        }
-
-
-        .companys
-        {
-            flex-wrap: wrap;
-        }
-        .brand
-        {
-            flex-wrap: wrap;
-            width: 300px;
-        }
-        .brand-1
-        {
-            flex-wrap: wrap;
-            width: 300px;
-        }
-
-
-        .doa
-        {
-            flex-wrap: wrap;
-        }
-        .doa-head
-        {
-            margin-left: -85px;
-        }
-        .doa-img img
-        {
-            width: 300px;
-            margin-left: -490px;
-        }
-
-
-        .launchpad
-        {
-            flex-wrap: wrap;
-        }
-        .launchpad-img img
-        {
-            margin-top: 80px;
-            width: 500px;
-            margin-left: -40px;
-        }
-
-        .launchpad-content h1
-        {
-            margin-left: -90px; 
-        } 
-        .launchpad-content p 
-        {
-            margin-left: -90px;
-        }
-        .launchpad-content .btn
-        {
-            
-            margin-left: -100px;
-        }
-        
-       
-        
-
-        .learn
-        {
-            flex-wrap: wrap;
-        }
-        .learn-content
-        {
-            margin-left: -100px;
-        }
-        .learn-img img
-        {
-            margin-top: 40px;
-            width: 300px;
-            margin-left: -320px;
-        }
-
-        .seed
-        {
-            flex-wrap: wrap;
-        }
-        .seed-img img
-        {
-            width: 300px;
-            margin-left: -50px;
-        }
-        .seed-content
-        {
-            margin-left: -145px;
-            /* margin-bottom: 190px; */
-        }
-
-        .icons
-        {
-            flex-wrap: wrap;
-        }
-        .icon-card img img
-        {
-            width: 100px;
-        }
-
-        .icon-web
-        {
-            flex-wrap: wrap;
-        }
-
-    }
-
-
-    /* Lanched page */
-    .launchpad
-    {
-        display: flex;
-        color: white;
-    }
-    .launchpad-content
-    {
-        padding-top: 230px;
-        margin-left: 150px;
-    }
-    .launchpad-content p
-    {
-        color: gray;
-    }
-    #t1
-    {
-        margin-left: -5px;   
-    }
-     
-
-    /* learn to earn */
-    .learn
-    {
-        display: flex;
-        color: white;
-    }
-    .learn-content
-    {
-        padding-top: 150px;
-        padding-left: 150px;
-    }
-    .learn-content p
-    {
-        color: gray;
-    }
-    #q1
-    {
-        margin-left: -5px;
-    }
-    .learn-img
-    {
-       padding-left: 350px;
-    }
-
-    /* seed funding */
+    .stacking,
+    .doa,
+    .launchpad,
+    .learn,
     .seed
     {
-      display: flex;  
-      color: white;
-    }
-    .seed-img
-    {
-        padding-left: 80px;
-        padding-top: 100px;
-    }
-    .seed-content
-    {
-        padding-top: 230px;
-        padding-left: 200px;
-    }
-    .seed-content p
-    {
-        color: gray;
-    }
-    #f1
-    {
-        margin-left: -5px;
+        gap: 36px;
     }
 
-    /* three icons */
-    .icons
-    { 
-        display: flex;
-        padding-top: 150px;
-        gap: 60px;
-        align-items: center;
-        text-align: center;
-        justify-content: space-evenly;
-    }
-    .icon-card
-    {
-        border: 2px solid lightgray;
-        color: white;
-        border-radius: 50px;
-        width: 400px;
-        height: 310px;
-        text-align: center;
-        padding: 30px;
-    }
-    .icon-card p
-    {
-        color: gray;
-    }
-    .icon-card h6
-    {
-        padding: 28px;
-    }
-
-    /* our web page */
-    .icon-web
-    {
-        padding-top: 250px;
-    }
-    .icon-right
-    {
-        padding-left: 200px;
-        margin-bottom: -250px;
-    }
-    .icon-center
-    {
-        padding-left: -30px;
-        text-align: center;
-        padding-top: 30px;
-    }
-    .icon-left
-    {
-        padding-left: 1150px;
-        margin-top: -150px;
-    }
-    .icon-content p
-    {
-        font-size: 25px;
-        padding-left: 485px;
-        padding-top: 150px;
-        color: whitesmoke;
-    }
-    .icon-content p1
-    {
-        font-size: 25px;
-        color: whitesmoke;
-        padding-left: 620px;
-    }
-    #p1
-    {
-        margin-left: 690px;
-        margin-bottom: -150px;
-    }
-    .icon-left-bottom
-    {
-        padding-left: 1150px;
-        margin-top: -120px;
-    }
+    .icon-right,
     .icon-right-bottom
     {
-        padding-left: 200px;
-        margin-top: 20px;
+        left: 7%;
     }
-    
-    /* footer */
-    .footer
+
+    .icon-left,
+    .icon-left-bottom
     {
-        display: flex;
-        padding-top: 120px;
-        justify-content: space-evenly;
-    }
-    .ALIHASSAN
-    {
-        padding: 40px;
-        color: white;
-    }
-     p
-    {
-        color: gray;
-    }
-    .docs
-    {
-        padding-left: 180px;
-        padding-top: 120px;
-        color: white;
-    }
-    .news
-    {
-        padding-left: 300px;
-        padding-top: 120px;
-        color: white;
-    }
-    .Email-btn
-    {
-       padding-left: 50px;
-    }
-    .copy-rights
-    {
-        color: white;
-        padding-left: 80px;
-    }
-
-/* 
- @media (max-width: 768px) {
-
-    
-    .nav {
-        display: block; 
-        text-align: center;
-       
-        font-size: 24px; 
-    }
-
-    nav a {
-    
-        margin: 10px 0; 
-        display: block; 
-    }
-
-    .button {
-        
-        margin: 20px auto; 
-        display: block;
-    }
-
-    
-    .main-head h1 {
-        
-        padding-left: 0;
-        padding-top: 50px;
-        font-size: 32px;
-        text-align: center;
-    }
-
-    .main-head h5 {
-        
-        padding-left: 0;
-        text-align: center;
-    }
-
-    .btn {
-        
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-
-    .img img {
-        
-        margin-left: 0; 
-        margin-top: 50px; 
-        width: 90%; 
-        height: auto;
-        display: block; 
-        margin: 50px auto 0 auto;
+        right: 7%;
     }
 }
 
-@media  (max-width: 768px) {
-    
+@media (max-width: 991px)
+{
+    .class
+    {
+        flex-direction: column;
+        align-items: center;
+        padding: 22px 24px;
+    }
+
+    nav
+    {
+        justify-content: center;
+    }
+
+    .main-page,
+    .stacking,
+    .doa,
+    .launchpad,
+    .learn,
+    .seed
+    {
+        flex-direction: column;
+        text-align: center;
+        padding: 70px 6%;
+    }
+
+    .launchpad,
+    .seed,
+    .stacking
+    {
+        flex-direction: column-reverse;
+    }
+
+    .main-head,
+    .img,
+    .stack-img,
+    .doa-img,
+    .launchpad-img,
+    .learn-img,
+    .seed-img,
+    .stack-content,
+    .doa-head,
+    .launchpad-content,
+    .learn-content,
+    .seed-content
+    {
+        flex-basis: auto;
+        width: 100%;
+    }
+
+    .container
+    {
+        gap: 24px;
+    }
+
+    .icon-web
+    {
+        min-height: auto;
+        padding: 80px 6%;
+    }
+
+    .icon-right,
+    .icon-left,
+    .icon-right-bottom,
+    .icon-left-bottom
+    {
+        position: static;
+        display: inline-block;
+        width: 22%;
+        margin: 12px;
+        vertical-align: middle;
+    }
+}
+
+@media (max-width: 767px)
+{
+    nav
+    {
+        gap: 14px 20px;
+    }
+
+    nav a
+    {
+        font-size: 15px;
+    }
+
+    .button
+    {
+        width: 120px;
+        height: 38px;
+        font-size: 16px;
+    }
+
+    .main-page,
     .lottery,
     .stacking,
     .doa,
     .launchpad,
     .learn,
-    .seed {
-        flex-direction: column;
-        padding-left: 0; 
-        text-align: center; 
+    .seed
+    {
+        padding: 55px 20px;
     }
-    
-    .lottery-head h1,
-    .lottery-head p {
-        padding-left: 0; 
+
+    .container-head
+    {
+        max-width: 360px;
+    }
+
+    .brand img,
+    .brand-1 img
+    {
+        max-width: 130px;
+    }
+
+    .icons
+    {
+        padding: 70px 20px 30px;
+    }
+
+    .icon-card
+    {
+        border-radius: 22px;
+        min-height: auto;
+    }
+
+    .footer
+    {
+        padding: 65px 20px 30px;
+    }
+
+    .copy-rights
+    {
+        padding: 0 20px 30px;
         text-align: center;
     }
-    
-    .container {
-        
+}
+
+@media (max-width: 575px)
+{
+    .class
+    {
+        padding: 18px 16px;
+    }
+
+    nav
+    {
         flex-direction: column;
-        gap: 30px; 
-        margin-left: 0;
-        align-items: center; 
+        width: 100%;
+        gap: 12px;
     }
 
-    
-    .stack-img,
-    .stack-content,
-    .doa-img,
-    .doa-head,
-    .launchpad-content,
-    .learn-content,
-    .learn-img,
-    .seed-img,
-    .seed-content {
-        padding: 0; 
-        margin: 20px auto; 
-        text-align: center;
-    }
-
-    
-    .doa-img {
-        margin-left: auto;
-    }
-    
-    
-    .stack-content h1,
-    .stack-content p,
-    .stack-content button {
-        padding-left: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
-    .icons {
-        flex-direction: column;
-        gap: 20px;
-        padding-top: 50px;
-    }
-
-    .icon-card {
-        width: 80%; 
-        height: auto; 
-    }
-    
-    
-    .footer {
-        flex-direction: column;
-        padding-top: 50px;
-        align-items: center;
-    }
-
-    .docs, .news {
-        padding-left: 0;
-        padding-top: 30px;
+    nav a,
+    .button
+    {
+        width: min(100%, 260px);
         text-align: center;
     }
 
-    .Email-btn {
-        padding-left: 0;
-        margin-top: 20px;
+    .main-head h1
+    {
+        font-size: 36px;
     }
-}  */
+
+    .main-page,
+    .lottery,
+    .stacking,
+    .doa,
+    .launchpad,
+    .learn,
+    .seed
+    {
+        padding: 44px 16px;
+    }
+
+    .card-body
+    {
+        flex-direction: column;
+        padding: 18px;
+    }
+
+    .card-body a
+    {
+        width: 100% !important;
+    }
+
+    .brand,
+    .brand-1
+    {
+        gap: 16px;
+    }
+
+    .brand img,
+    .brand-1 img
+    {
+        max-width: 115px;
+    }
+
+    .icon-right,
+    .icon-left,
+    .icon-right-bottom,
+    .icon-left-bottom
+    {
+        width: 34%;
+        margin: 8px;
+    }
+
+    .footer
+    {
+        text-align: center;
+    }
+
+    .news input
+    {
+        text-align: center;
+    }
+}
